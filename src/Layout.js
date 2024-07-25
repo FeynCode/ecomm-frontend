@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import Router, { Switch, Route } from "crossroad";
-import Listing from "./pages/Listing";
+import Home from "./pages/Home";
 
 const Profile = ({ id }) => <main>Hello {id.toUpperCase()}</main>;
 
@@ -10,7 +10,7 @@ const App = () => {
       <div className="px-10">
         <Header />
         <Switch>
-          <Route path="/" component={Listing} />
+          <Route path="/" component={Home} />
           <Route path="/:id" component={Profile} />
         </Switch>
       </div>

@@ -1,7 +1,7 @@
 import { FiArrowRight, FiSearch, FiShoppingCart, FiUser } from "react-icons/fi";
 
 const Header = () => {
-  const categories = ["Women", "Men", "Kids", "Brands"];
+  const categories = ["Women", "Men", "Kids", "Sale"];
   const breadcrumbs = ["Home", "Women", "Tops"];
   return (
     <header className="sticky top-0 bg-white ">
