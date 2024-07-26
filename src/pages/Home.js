@@ -10,7 +10,10 @@ const Home = () => {
   const [showFilter, setShowFilter] = useState(true);
   return (
     <div className="my-10">
-      <div className="text-3xl tracking-wider uppercase my-3">
+      <div className="">
+        <img src="https://ik.imagekit.io/adityaportfolio/Ecomm/hero_HFAWp0lrE.jpg?updatedAt=1722027897264" alt="Banner" className="w-full rounded-lg" />
+      </div>
+      <div className="text-3xl tracking-wider uppercase mb-3 mt-10">
         Category Name
       </div>
       <div className="flex justify-between w-full mt-7">

@@ -7,12 +7,14 @@ const Profile = ({ id }) => <main>Hello {id.toUpperCase()}</main>;
 const App = () => {
   return (
     <Router >
-      <div className="px-10">
+      <div className="">
         <Header />
-        <Switch>
-          <Route path="/" component={Home} />
-          <Route path="/:id" component={Profile} />
-        </Switch>
+        <div className="px-10">
+          <Switch>
+            <Route path="/" component={Home} />
+            <Route path="/:id" component={Profile} />
+          </Switch>
+        </div>
       </div>
     </Router>
   );
