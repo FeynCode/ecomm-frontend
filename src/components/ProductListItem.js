@@ -6,14 +6,14 @@ import { FiStar } from "react-icons/fi";
 const ProductListItem = ({ product }) => {
   const [filledHeart, setFilledHeart] = useState("white");
   return (
-    <div className="max-w-[300px] rounded-lg my-3 border border-black hover:drop-shadow-2xl  ">
+    <div className="max-w-[300px] rounded-lg my-3 border border-black hover:shadow-2xl  ">
       <div className="relative -z-[1] text-white cursor-pointer">
         <img src={product.image} alt={product.name} className="w-full rounded-t-lg " />
         <div className="absolute bottom-0 w-full p-3 bg-gradient-to-t from-black to-transparent" id="desc">
           <div>
             <p className="text-base inline-block">₹{product.price}&ensp;</p>
             <p className="font-light inline-block text-xs line-through  strike">₹{product.price + 500}</p>&ensp;
-            <p className="font-semibold inline-block text-lime-500 text-sm">50% off</p>
+            <p className="font-semibold inline-block text-lime-500 text-sm">{product.discount}% off</p>
           </div>
           <div className="text-sm  font-light">{product.name}</div>
           <div className="flex items-center text-xs"><FiStar fill="orange" color="orange" size={14} /> &nbsp; 4.5 | 50</div>
